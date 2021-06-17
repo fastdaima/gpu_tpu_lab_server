@@ -3,6 +3,12 @@
 __all__ = ['jupyter_lab', 'vscode']
 
 # Cell
+from subprocess import Popen, PIPE, STDOUT, run
+import os
+import time
+from importlib import import_module
+
+# Cell
 def jupyter_lab(lab: bool = True, dir_name: str = 'None') -> None:
     "starts jupyter lab server using localtunnel"
     from google.colab import drive
