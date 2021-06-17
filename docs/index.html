@@ -66,7 +66,7 @@ nb_path: "index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gpu_tpu_lab_server.core</span> <span class="kn">import</span> <span class="n">jupyter_lab</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gpu_tpu_lab_server.core</span> <span class="kn">import</span> <span class="n">jupyter_lab</span><span class="p">,</span> <span class="n">vscode</span><span class="p">,</span> <span class="n">run_process_in_background</span><span class="p">,</span> <span class="n">run_process_in_foreground</span>
 </pre></div>
 
     </div>
@@ -78,8 +78,16 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="run">run<a class="anchor-link" href="#run"> </a></h3><p>jupyter_lab()  # for jupyter_lab environment <br>
-vscode()  # for vscode server environment</p>
+<h2 id="For-starting-the-server-in-google-colab-with-google_drive-support">For starting the server in google colab with google_drive support<a class="anchor-link" href="#For-starting-the-server-in-google-colab-with-google_drive-support"> </a></h2><h3 id="To-enable-jupyter_lab_environment">To enable jupyter_lab_environment<a class="anchor-link" href="#To-enable-jupyter_lab_environment"> </a></h3><ol>
+<li>execute <code>jupyter_lab()</code>  </li>
+<li>an authorization window will open with a link, go to the link &gt; select your google account &gt; accept all the permissions &gt; authorization code will be displayed &gt; copy and paste the code in the window</li>
+<li>an localtunnel link will be returned, go to that link, wait for 10 second, then press open tunnel button, it will open an jupyter lab environment</li>
+</ol>
+<h3 id="To-enable-vscode()-environment">To enable vscode() environment<a class="anchor-link" href="#To-enable-vscode()-environment"> </a></h3><ol>
+<li>execute <code>vscode()</code> optional parameter any text :- the generated link will have the text or by default fastdaima</li>
+<li>an authorization window will open with a link, go to the link &gt; select your google account &gt; accept all the permissions &gt; authorization code will be displayed &gt; copy and paste the code in the window</li>
+<li>an localtunnel link will be returned, go to that link it will open an vscode server environment</li>
+</ol>
 
 </div>
 </div>

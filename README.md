@@ -15,9 +15,16 @@
 ## How to use
 
 ```
-from gpu_tpu_lab_server.core import jupyter_lab
+from gpu_tpu_lab_server.core import jupyter_lab, vscode, run_process_in_background, run_process_in_foreground
 ```
 
-### run
-jupyter_lab()  # for jupyter_lab environment <br>
-vscode()  # for vscode server environment
+## For starting the server in google colab with google_drive support
+### To enable jupyter_lab_environment
+1. execute `jupyter_lab()`  
+2. an authorization window will open with a link, go to the link > select your google account > accept all the permissions > authorization code will be displayed > copy and paste the code in the window
+3. an localtunnel link will be returned, go to that link, wait for 10 second, then press open tunnel button, it will open an jupyter lab environment
+
+### To enable vscode() environment
+1. execute `vscode()` optional parameter any text :- the generated link will have the text or by default fastdaima
+2. an authorization window will open with a link, go to the link > select your google account > accept all the permissions > authorization code will be displayed > copy and paste the code in the window
+3. an localtunnel link will be returned, go to that link it will open an vscode server environment
