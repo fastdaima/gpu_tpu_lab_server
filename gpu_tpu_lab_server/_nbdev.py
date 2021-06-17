@@ -5,7 +5,8 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"run_process_in_foreground": "00_core.ipynb",
          "run_process_in_background": "00_core.ipynb",
          "jupyter_lab": "00_core.ipynb",
-         "vscode": "00_core.ipynb"}
+         "vscode": "00_core.ipynb",
+         "jupyter": "00_core.ipynb"}
 
 modules = ["core.py"]
 
