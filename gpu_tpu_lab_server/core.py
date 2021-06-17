@@ -7,10 +7,7 @@ def jupyter_lab(lab: bool = True, dir_name: str = 'None') -> None:
     "starts jupyter lab server using localtunnel"
     from google.colab import drive
     drive.mount('/content/drive')
-    if dir_name != 'None':
-        path = '/content/drive/MyDrive/'+dir_name+'/'
-    else:
-        os.chdir('/content/drive/MyDrive/colab/')
+    os.chdir('/content/drive/MyDrive/colab/')
     command = 'nohup jupyter lab --notebook-dir="/content/drive/MyDrive/colab" --no-browser --allow-root --ip="0.0.0.0" --port="6006" &'
     run_process_in_background(command)
     time.sleep(5)

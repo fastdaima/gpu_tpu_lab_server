@@ -14,7 +14,7 @@
 
 ## How to use
 
-```python
+```
 from gpu_tpu_lab_server.core import jupyter_lab
 ```
 
